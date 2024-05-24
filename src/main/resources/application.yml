@@ -1,0 +1,34 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jasper
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9090
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAW3MEEIFUVLVKF66X
+      secret-key: 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
+    region:
+      static: ap-southeast-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: nhiphat01
+
